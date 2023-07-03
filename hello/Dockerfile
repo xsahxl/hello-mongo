@@ -3,7 +3,7 @@ FROM gcr.io/kaniko-project/executor:debug AS kaniko
 # ================================
 # Build image
 # ================================
-FROM swift:5.8-bionic as build
+FROM swift:5.8.1-bionic as build
 
 # Install OS updates and, if needed, sqlite3
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true \
