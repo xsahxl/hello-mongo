@@ -13,7 +13,7 @@ services:
     component: fc  # 组件名称
     actions:
       pre-deploy: # 在deploy之前运行
-        - component: fc info
+        - component: fc build -h
         # - component: fc build --use-docker --dockerfile ./hello/Dockerfile --context ./hello
           #  - run: docker build xxx            # 要执行的系统命令，类似于一种钩子的形式
           #    path: ./src                      # 执行系统命令/钩子的路径
